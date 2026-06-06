@@ -1,12 +1,8 @@
-mod exercises;
+mod module;
+mod order;
+mod string_commons;
+mod validation;
 
-
-
-struct Ticket {
-	title: String,
-	description: String,
-	status: String,
-}
 
 fn main() {
 	

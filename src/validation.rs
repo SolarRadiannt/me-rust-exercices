@@ -112,15 +112,16 @@ mod tests {
         assert_eq!(ticket.status(), "To-Do");
     }
 
-    #[test]
-    fn setter_test() {
-        let mut ticket = Ticket::new("A title".into(), "A description".into(), "To-Do".into());
-        ticket.set_title("A new title".into());
-        ticket.set_description("A new description".into());
-        ticket.set_status("Done".into());
-
-        assert_eq!(ticket.title(), "A new title");
-        assert_eq!(ticket.description(), "A new description");
-        assert_eq!(ticket.status(), "Done");
-    }
+	#[test]
+	fn setter_test() {
+		let mut ticket = Ticket::new("A title".into(), "A description".into(), "To-Do".into());
+		ticket.set_title("A new title".into());
+		ticket.set_description("A new description".into());
+		ticket.set_status("Done".into());
+		
+		
+		assert_eq!(ticket.title(), "A new title");
+		assert_eq!(ticket.description(), "A new description");
+		assert_eq!(ticket.status(), "Done");
+	}
 }

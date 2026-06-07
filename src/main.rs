@@ -6,6 +6,7 @@ mod stack;
 mod heap;
 mod refrences_mem;
 mod is_even;
+mod orphan_rule;
 
 fn main() {
 	

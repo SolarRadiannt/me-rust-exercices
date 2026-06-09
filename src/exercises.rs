@@ -11,3 +11,4 @@ mod eq_derive;
 mod refrences_mem;
 mod trait_bounds;
 mod str_slice;
+mod deref;

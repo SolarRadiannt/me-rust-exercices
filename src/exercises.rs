@@ -12,3 +12,4 @@ mod refrences_mem;
 mod trait_bounds;
 mod str_slice;
 mod deref;
+mod sized;

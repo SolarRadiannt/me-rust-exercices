@@ -1,4 +1,3 @@
-use std::mem::size_of;
 pub struct Ticket {
     title: String,
     description: String,

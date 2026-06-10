@@ -6,6 +6,7 @@ mod drop;
 mod eq_derive;
 mod from;
 mod heap;
+mod integration_test;
 mod is_even;
 mod module;
 mod operator_overload;

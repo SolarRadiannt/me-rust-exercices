@@ -54,7 +54,7 @@ pub mod ticket {
 
 mod tests {
 	use super::ticket::Ticket;
-	use crate::string_commons::{
+	use crate::exercises::string_commons::{
 		overly_long_description,
 		overly_long_title,
 		valid_description,

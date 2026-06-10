@@ -1,5 +1,5 @@
 // TODO: Implement the `From` trait for the `WrappingU32` type to make `example` compile.
-
+#[allow(unused)]
 use crate::exercises::trait_bounds::min;
 
 pub struct WrappingU32 {

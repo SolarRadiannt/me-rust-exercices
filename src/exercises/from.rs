@@ -7,24 +7,24 @@ pub struct WrappingU32 {
 }
 
 // impl<T, U> Into for WrappingU32
-// where 
+// where
 // 	U: From
 // {
-	
+
 // }
 
 impl From<u32> for WrappingU32 {
-	fn from(value: u32) -> Self {
-		WrappingU32 { inner: value }
-	}
+    fn from(value: u32) -> Self {
+        WrappingU32 { inner: value }
+    }
 }
 
 #[test]
 fn example() {
     let wrapping: WrappingU32 = 42.into();
     min(wrapping.inner, wrapping.inner);
-    
+
     let wrapping = WrappingU32::from(42);
-    
+
     min(wrapping.inner, wrapping.inner);
 }

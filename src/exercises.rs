@@ -1,6 +1,7 @@
 mod assocngeneric;
 mod clone;
 mod copy;
+mod dependencies;
 mod deref;
 mod drop;
 mod enum_test;

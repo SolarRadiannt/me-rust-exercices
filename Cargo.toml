@@ -7,6 +7,8 @@ edition = "2024"
 num-traits = "0.2.19"
 static_assertions = "1.1.0"
 packages = { path = "./packages" }
+thiserror = "2.0.18"
+anyhow = "1.0.102"
 
 [lints.rust]
 dead_code = "allow"

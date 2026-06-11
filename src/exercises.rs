@@ -25,6 +25,7 @@ mod sized;
 mod stack;
 mod str_slice;
 mod string_commons;
+mod thiserror;
 mod trait_bounds;
 mod validation;
 mod variants_data;

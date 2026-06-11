@@ -6,6 +6,7 @@ mod drop;
 mod enum_test;
 mod eq_derive;
 mod err_enum;
+mod error_trait;
 mod fallibility;
 mod from;
 mod heap;

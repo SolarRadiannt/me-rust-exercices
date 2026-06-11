@@ -13,6 +13,7 @@ name = "me-exercices"
 version = "0.1.0"
 dependencies = [
  "num-traits",
+ "packages",
  "static_assertions",
 ]
 
@@ -24,6 +25,10 @@ checksum = "071dfc062690e90b734c0b2273ce72ad0ffa95f0c74596bc250dcfd960262841"
 dependencies = [
  "autocfg",
 ]
+
+[[package]]
+name = "packages"
+version = "0.1.0"
 
 [[package]]
 name = "static_assertions"

@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 num-traits = "0.2.19"
 static_assertions = "1.1.0"
-
+packages = { path = "./packages" }
 
 [lints.rust]
 dead_code = "allow"

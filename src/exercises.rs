@@ -5,6 +5,7 @@ mod deref;
 mod drop;
 mod enum_test;
 mod eq_derive;
+mod fallibility;
 mod from;
 mod heap;
 mod hello_world;

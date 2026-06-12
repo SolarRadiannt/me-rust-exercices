@@ -2,7 +2,30 @@
 //   enforcing that the title is not empty and is not longer than 50 bytes.
 //   Implement the traits required to make the tests pass too.
 
+#[derive(Debug, PartialEq, Clone)]
 pub struct TicketTitle(String);
+
+impl TryFrom<String> for TicketTitle {
+    type Error = String;
+    fn try_from(value: String) -> Result<Self, Self::Error> {
+        if value.is_empty() {
+            return Err("The title cannot be empty".into());
+        };
+
+        if value.len() > 50 {
+            return Err("The title cannot be longer than 50 bytes".into());
+        };
+
+        Ok(Self(value))
+    }
+}
+
+impl TryFrom<&str> for TicketTitle {
+    type Error = String;
+    fn try_from(value: &str) -> Result<Self, Self::Error> {
+        Self::try_from(value.to_string())
+    }
+}
 
 #[cfg(test)]
 mod tests {
@@ -24,7 +47,8 @@ mod tests {
     #[test]
     fn test_try_from_long_string() {
         let title =
-            "A title that's definitely longer than what should be allowed in a development ticket"
+            "A title that's definitely longer than what should be allowed in a development ticket
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 .to_string();
         let err = TicketTitle::try_from(title).unwrap_err();
         assert_eq!(err.to_string(), "The title cannot be longer than 50 bytes");

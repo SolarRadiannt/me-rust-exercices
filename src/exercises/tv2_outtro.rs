@@ -1,16 +1,13 @@
 // TODO: you have something to do in each of the modules in this crate!
-mod description;
-mod status;
-mod title;
 
 // A common pattern in Rust is to split code into multiple (private) modules
 // and then re-export the public parts of those modules at the root of the crate.
 //
 // This hides the internal structure of the crate from your users, while still
 // allowing you to organize your code however you like.
-pub use description::TicketDescription;
-pub use status::Status;
-pub use title::TicketTitle;
+pub use crate::exercises::tv2_description::TicketDescription;
+pub use crate::exercises::tv2_status::Status;
+pub use crate::exercises::tv2_title::TicketTitle;
 
 #[derive(Debug, PartialEq, Clone)]
 // We no longer need to make the fields private!

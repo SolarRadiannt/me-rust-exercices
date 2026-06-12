@@ -22,6 +22,7 @@ mod operator_overload;
 mod order;
 mod orphan_rule;
 mod refrences_mem;
+mod resizing;
 mod sized;
 mod stack;
 mod status;

@@ -17,6 +17,7 @@ mod if_let;
 mod is_even;
 mod iter;
 mod iterators;
+mod lifetimes;
 mod match_test;
 mod module;
 mod nullability;

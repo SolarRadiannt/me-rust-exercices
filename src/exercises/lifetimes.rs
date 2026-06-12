@@ -1,5 +1,3 @@
-use std::vec::IntoIter;
-
 use crate::exercises::tv2_description::TicketDescription;
 use crate::exercises::tv2_title::TicketTitle;
 
@@ -9,9 +7,10 @@ pub struct TicketStore {
     tickets: Vec<Ticket>,
 }
 
-impl IntoIterator for &TicketStore {
-    type IntoIter = IntoIter<Ticket>;
-    type Item = Ticket;
+impl<'a> IntoIterator for &'a TicketStore {
+	type Item = &'a Ticket;
+    type IntoIter = std::slice::Iter<'a, Ticket>;
+    
     fn into_iter(self) -> Self::IntoIter {
         self.tickets.iter()
     }
@@ -42,7 +41,7 @@ impl TicketStore {
         self.tickets.push(ticket);
     }
 
-    pub fn iter(&self) -> std::slice::Iter<Ticket> {
+    pub fn iter(&self) -> std::slice::Iter<'_, Ticket> {
         self.tickets.iter()
     }
 }

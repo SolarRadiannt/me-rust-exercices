@@ -15,6 +15,8 @@ mod heap;
 mod hello_world;
 mod if_let;
 mod is_even;
+mod iter;
+mod iterators;
 mod match_test;
 mod module;
 mod nullability;

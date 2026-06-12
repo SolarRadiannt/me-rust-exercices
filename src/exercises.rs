@@ -1,3 +1,4 @@
+mod arrays;
 mod assocngeneric;
 mod clone;
 mod copy;
@@ -36,3 +37,4 @@ mod tv2_status;
 mod tv2_title;
 mod validation;
 mod variants_data;
+mod vec;

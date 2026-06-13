@@ -45,3 +45,4 @@ mod vec;
 mod combinators;
 mod impl_trait;
 mod impl_trait2;
+mod slices;

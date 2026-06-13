@@ -43,3 +43,4 @@ mod validation;
 mod variants_data;
 mod vec;
 mod combinators;
+mod impl_trait;

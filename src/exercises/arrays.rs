@@ -1,27 +1,27 @@
 // TODO: Flesh out the `WeekTemperatures` struct and its method implementations to pass the tests.
 
 pub enum Weekday {
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Saturday,
-    Sunday,
+	Monday,
+	Tuesday,
+	Wednesday,
+	Thursday,
+	Friday,
+	Saturday,
+	Sunday,
 }
 
 impl Weekday {
-    fn index(&self) -> usize {
-        match self {
-            Weekday::Sunday => 0,
-            Weekday::Monday => 1,
-            Weekday::Tuesday => 2,
-            Weekday::Wednesday => 3,
-            Weekday::Thursday => 4,
-            Weekday::Friday => 5,
-            Weekday::Saturday => 6,
-        }
-    }
+	fn index(&self) -> usize {
+		match self {
+			Weekday::Sunday => 0,
+			Weekday::Monday => 1,
+			Weekday::Tuesday => 2,
+			Weekday::Wednesday => 3,
+			Weekday::Thursday => 4,
+			Weekday::Friday => 5,
+			Weekday::Saturday => 6,
+		}
+	}
 }
 
 pub struct WeekTemperatures {

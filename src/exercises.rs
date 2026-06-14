@@ -48,3 +48,4 @@ mod impl_trait2;
 mod slices;
 mod ticket_management;
 mod index;
+mod hashmap;
